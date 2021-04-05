@@ -1,4 +1,4 @@
-let balance = 87.1;
+let balance = 50;
 const previousCrashes = Array.prototype.slice
   .call($(".entries").children)
   .map((e) => parseFloat(e.innerText))
