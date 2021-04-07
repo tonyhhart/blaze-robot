@@ -1,13 +1,16 @@
+declare let BET_PERCENTAGE: number;
 declare let balance: number;
-declare const previousCrashes: any;
+declare let amount: number;
+declare let previousCrashes: any;
 declare const betHistory: BetHistory[];
 declare const STOP_WIN = 2;
 declare let EXPONENT_PUSH_TOKEN: string;
-declare let BET_PERCENTAGE: number;
 declare let interval: number;
+declare function simulateClick(elem: HTMLElement): void;
 declare function checkPreviousCrashes(data: CrashUpdate): void;
 declare function updatePreviousCrashes({ payload: { id, crash_point } }: CrashUpdate): void;
 declare function enterPosition(data: CrashUpdate): void;
+declare function setInputValue(selector: string, value: string): void;
 declare function sendNotification(title: string, body: string): void;
 declare type CrashUpdate = {
     id: "crash.update";
